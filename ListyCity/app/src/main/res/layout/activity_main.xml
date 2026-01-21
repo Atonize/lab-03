@@ -10,79 +10,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/add_button"
-            android:layout_width="match_parent"
-            android:layout_weight="0.5"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dip"
-            android:text="ADD"
-            android:paddingVertical="15dip"
-            android:textAlignment="center"
-            android:textSize="18sp">
-
-        </Button>
-
-        <Button
-            android:id="@+id/delete_button"
-            android:layout_width="match_parent"
-            android:layout_weight="0.5"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dip"
-            android:text="DELETE"
-            android:paddingVertical="15dip"
-            android:textAlignment="center"
-            android:textSize="18sp">
-
-        </Button>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent">
         <ListView
             android:id="@+id/city_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.1"
-            android:choiceMode="singleChoice"
-            android:listSelector="@android:color/darker_gray">
-
-        </ListView>
-        <LinearLayout
-            android:id="@+id/prompt_name"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="0.9">
-
-            <EditText
-                android:id="@+id/input_area"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:inputType="text">
-
-            </EditText>
-
-            <Button
-                android:id="@+id/confirm_button"
-                android:layout_width="match_parent"
-                android:layout_weight="0.5"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dip"
-                android:text="CONFIRM"
-                android:paddingVertical="15dip"
-                android:textAlignment="center"
-                android:textSize="18sp">
-
-            </Button>
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_add_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_input_add"/>
 
     </LinearLayout>
 
